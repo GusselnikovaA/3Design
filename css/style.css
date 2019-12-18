@@ -624,6 +624,10 @@ a {
   z-index: -1;
 }
 
+.hero-arrow {
+  z-index: 999;
+}
+
 .edge__title {
   margin-bottom: 85px;
 }
@@ -700,8 +704,7 @@ a {
 
 .steps {
   text-align: left;
-  background: url("../img/hero/1.jpg"), rgba(255, 255, 255, 0.7);
-  background-blend-mode: color;
+  background-image: url("../img/steps/2.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
