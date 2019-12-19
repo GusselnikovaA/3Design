@@ -379,9 +379,10 @@ a {
 .title {
   font-size: 46px;
   line-height: 40px;
-  letter-spacing: 1.8px;
   text-transform: uppercase;
   text-align: center;
+  font-family: 'SONGER Grotesque Bold';
+  letter-spacing: 4px;
 }
 
 @media (min-width: 992px) {
@@ -404,6 +405,9 @@ a {
   .header-list__item a:hover:before {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+  .portfolio-card:hover {
+    cursor: pointer;
   }
   .portfolio-card:hover:before {
     opacity: 1;
@@ -547,11 +551,79 @@ a {
 }
 
 @font-face {
-  font-family: 'Bebas Neue Regular';
-  src: url("../fonts/BebasNeue/BebasNeueRegular.eot");
-  src: url("../fonts/BebasNeue/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueRegular.ttf") format("truetype");
+  font-family: 'SONGER Grotesque';
+  src: url("../fonts/Songergrotesque/Songergrotesque.woff") format("woff"), url("../fonts/Songergrotesque/Songergrotesque.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SONGER Grotesque Bold';
+  src: url("../fonts/Songergrotesque/Songergrotesquebold.woff") format("woff"), url("../fonts/Songergrotesque/Songergrotesquebold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@-webkit-keyframes flipdown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: rotateX(8deg);
+            transform: rotateX(8deg);
+  }
+  83% {
+    -webkit-transform: rotateX(6deg);
+            transform: rotateX(6deg);
+  }
+  92% {
+    -webkit-transform: rotateX(-3deg);
+            transform: rotateX(-3deg);
+  }
+  100% {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: rotateX(8deg);
+            transform: rotateX(8deg);
+  }
+  83% {
+    -webkit-transform: rotateX(6deg);
+            transform: rotateX(6deg);
+  }
+  92% {
+    -webkit-transform: rotateX(-3deg);
+            transform: rotateX(-3deg);
+  }
+  100% {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
 }
 
 .header {
@@ -691,12 +763,14 @@ a {
   padding: 15px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
+  font-family: 'SONGER Grotesque';
+  letter-spacing: 4.5px;
   color: #ffffff;
 }
 
 .edge-main__text {
   font-size: 24px;
-  width: 50%;
+  width: 80%;
   margin: auto;
   text-align: center;
   line-height: 1.55;
@@ -712,7 +786,7 @@ a {
           animation: flipdown 0.5s ease both;
 }
 
-.no-select {
+.no-select, .steps__subtitle {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -947,5 +1021,9 @@ a {
   color: rgba(0, 0, 0, 0.75);
   margin-bottom: 55px;
   font-size: 20px;
+}
+
+.follow-slider__item {
+  margin: 0 15px;
 }
 /*# sourceMappingURL=style.css.map */

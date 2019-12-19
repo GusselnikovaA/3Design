@@ -51,11 +51,19 @@
 }
 
 @font-face {
-  font-family: 'Bebas Neue Regular';
-  src: url('../fonts/BebasNeue/BebasNeueRegular.eot');
-  src: url('../fonts/BebasNeue/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
-  url('../fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+  font-family: 'SONGER Grotesque';
+  src: 
+  url('../fonts/Songergrotesque/Songergrotesque.woff') format('woff'),
+  url('../fonts/Songergrotesque/Songergrotesque.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'SONGER Grotesque Bold';
+  src: 
+  url('../fonts/Songergrotesque/Songergrotesquebold.woff') format('woff'),
+  url('../fonts/Songergrotesque/Songergrotesquebold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   }
