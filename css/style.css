@@ -729,10 +729,11 @@ a {
   background-attachment: fixed;
   padding-bottom: 55px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  position: relative;
 }
 
 .steps__title {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .steps__subtitle {
@@ -908,7 +909,7 @@ a {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 2800px;
+  height: 2650px;
 }
 
 .portfolio-card {
@@ -934,5 +935,17 @@ a {
 .portfolio-card img {
   display: block;
   min-height: 100%;
+}
+
+.follow__title {
+  margin-bottom: 10px;
+}
+
+.follow__link, .follow a {
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 55px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
