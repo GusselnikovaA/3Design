@@ -32,7 +32,7 @@
   &-content 
     margin: auto
     text-align: justify
-  &__text 
+  &-text 
     position: relative
     overflow: hidden
     @extend .transition
@@ -41,9 +41,15 @@
     margin-top: 14px
     z-index: 2
     list-style: none
+    // Стили фона и обводки границей описания этапов в открытом состоянии
+    background-color: rgba($light-color, 0.5)
+    border: 1px solid $dark-color
+    border-bottom: 0px
     &__item 
       display: flex
       align-items: center
+      width: 80%
+      margin: auto
       margin: 8px 0
       // нстройка элементов списка (зеленые кружки)
       &:before
@@ -51,6 +57,8 @@
         font-size: 30px
         color: $black
         padding-right: 10px
+      &:last-child 
+        margin-bottom: 22px
   &-list 
     list-style: none
     perspective: 900
@@ -64,6 +72,10 @@
         border-top: 1px solid $dark-color
       &:first-child
         padding-top: 19.9px
+        // Нижняя граница у последнего пункта этапов в открытом состоянии
+      &:last-child 
+        .steps-text
+          border-bottom: 1px solid $dark-color
       @extend .flipIn  
       &:nth-of-type(1)
         animation-delay: 0.5s

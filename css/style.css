@@ -405,8 +405,8 @@ a {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
-  .hero-arrow:hover a {
-    cursor: pointer;
+  .portfolio-card:hover:before {
+    opacity: 1;
   }
 }
 
@@ -702,7 +702,7 @@ a {
   line-height: 1.55;
 }
 
-.transition, .steps__text, .steps-list__item i:before, .steps-list__item i:after {
+.transition, .steps-text, .steps-list__item i:before, .steps-list__item i:after {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -746,7 +746,7 @@ a {
   text-align: justify;
 }
 
-.steps__text {
+.steps-text {
   position: relative;
   overflow: hidden;
   opacity: 1;
@@ -755,23 +755,32 @@ a {
   margin-top: 14px;
   z-index: 2;
   list-style: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 0px;
 }
 
-.steps__text__item {
+.steps-text__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  margin: auto;
   margin: 8px 0;
 }
 
-.steps__text__item:before {
+.steps-text__item:before {
   content: "•";
   font-size: 30px;
   color: #000000;
   padding-right: 10px;
+}
+
+.steps-text__item:last-child {
+  margin-bottom: 22px;
 }
 
 .steps-list {
@@ -794,6 +803,10 @@ a {
 
 .steps-list__item:first-child {
   padding-top: 19.9px;
+}
+
+.steps-list__item:last-child .steps-text {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
 }
 
 .steps-list__item:nth-of-type(1) {
@@ -901,5 +914,25 @@ a {
 .portfolio-card {
   width: 550px;
   margin: 15px;
+  position: relative;
+}
+
+.portfolio-card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.portfolio-card img {
+  display: block;
+  min-height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
