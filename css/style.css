@@ -412,6 +412,14 @@ a {
   .portfolio-card:hover:before {
     opacity: 1;
   }
+  .follow-slider__image:hover {
+    -webkit-animation: bloom ease-in-out .75s forwards;
+            animation: bloom ease-in-out .75s forwards;
+  }
+  .follow-slider__image:hover:before {
+    -webkit-animation: circle .75s;
+            animation: circle .75s;
+  }
 }
 
 /* Slider */
@@ -623,6 +631,68 @@ a {
             transform-origin: top center;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes bloom {
+  0% {
+    -webkit-filter: grayscale(0.8);
+            filter: grayscale(0.8);
+  }
+  40% {
+    -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
+  }
+  100% {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
+@keyframes bloom {
+  0% {
+    -webkit-filter: grayscale(0.8);
+            filter: grayscale(0.8);
+  }
+  40% {
+    -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
+  }
+  100% {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: .5;
+    background: rgba(213, 156, 34, 0.2);
+  }
+  40% {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: .5;
+    background: rgba(213, 156, 34, 0.2);
+  }
+  40% {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
   }
 }
 
@@ -1025,6 +1095,32 @@ a {
 
 .follow-slider__item {
   margin: 0 10px;
+}
+
+.follow-slider__image {
+  position: relative;
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.follow-slider__image:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .contacts {
