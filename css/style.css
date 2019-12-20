@@ -362,7 +362,7 @@ a {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -1124,13 +1124,23 @@ a {
 }
 
 .contacts {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #1f1b18;
   color: #ffffff;
+  padding-bottom: 55px;
 }
 
 .contacts-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contacts__image {
+  max-width: 50%;
+}
+
+.contacts-info {
+  width: 50%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
