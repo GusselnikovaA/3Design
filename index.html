@@ -23,7 +23,7 @@
               <ul class="list header-list">
                 <li class="header-list__item"><a href="#edge">О нас</a></li>
                 <li class="header-list__item"><a href="#portfolio">Проекты</a></li>
-                <li class="header-list__item"><a href="#">Контакты</a></li>
+                <li class="header-list__item"><a href="#contacts">Контакты</a></li>
               </ul>
               <!-- /.list header-list -->
               <button class="header-burger header-burger_alert"><span></span></button>
@@ -270,7 +270,7 @@
   <!-- /.section portfolio -->
 
   <!-- РАЗДЕЛ С ФОРМОЙ ОБРАТНОЙ СВЯЗИ -->
-  <div class="section contacts">
+  <div class="section contacts" id="contacts">
     <div class="container">
       <div class="contacts-wrap">
         <div class="contacts__image">
@@ -313,6 +313,14 @@
             <!-- /.contacts-list -->
           </div>
           <!-- /.contacts-social -->
+          <!-- форма -->
+					<form action="mail.php" method="POST" class="form contacts__form" id="contacts-form">
+						<input type="text" name="username" class="input contacts__input" placeholder="Ваше имя">
+						<input type="tel" name="userphone" class="input contacts__input phone" placeholder="Ваш телефон">
+						<input type="email" name="useremail" class="input contacts__input" placeholder="Ваш email">
+						<button type="submit" class="button contacts__button">Отправить</button>
+					</form>
+					<!-- /.form call__form -->
         </div>
         <!-- /.contacts-info -->
       </div>

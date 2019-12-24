@@ -33,6 +33,27 @@ a
   font-family: 'SONGER Grotesque Bold'
   letter-spacing: 4px
 
+.input
+  border: none
+  border-bottom: 1px solid $form-color
+  padding: 12px
+  outline: none
+  background-color: transparent
+  color: $light-color
+  &:focus
+    border-bottom: 1px solid $light-color
+
+input.error 
+  border-bottom: 1px solid $error-color
+  // &:focus
+  //   border: 1px solid $error-color
+
+.button 
+  outline: none
+  cursor: pointer
+  text-transform: uppercase
+  letter-spacing: 2px
+
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
   // HOVER эффекты блока HEADER 
@@ -93,6 +114,18 @@ a
       &:hover
         transition: 0.5s
         color: $behance-color
+
+  .contacts
+    &__button 
+      &:hover
+        color: $dark-color
+        background: $light-color
+        transition: 0.7s
+        transition-delay: 0.4s 
+        &:before 
+          transform: scaleX(1)
+        &:after 
+          transform: scaleY(1)
 
     
 
