@@ -269,6 +269,43 @@
   </div>
   <!-- /.section portfolio -->
 
+  <!-- РАЗДЕЛ С ПОЛЗУНКОМ ДО ПОСЛЕ -->
+  <div class="section compare">
+      <div class="compare-wrap">
+        <div class="compare-block">
+          <div class="compare-image">
+            <div id="container2">
+              <img src="img/compare/Муляр спальня гостевая 1 правка сетка.jpg" alt="">
+              <img src="img/compare/Муляр спальня гостевая 1 правка.jpg" alt="">
+            </div>
+          </div>
+          <!-- /.compare-image -->
+          <div class="compare-text">
+            <p>Какой то текст, который будет описывать ползунки или преимущества студии или еще нести какую то информацию. Может полезную, а может не очень</p>
+          </div>
+          <!-- /.compare-text -->
+        </div>
+        <!-- /.compare-block -->
+        <div class="compare-block compare_dark">
+          <div class="compare-text">
+            <p>Какой то текст, который будет описывать ползунки или преимущества студии или еще нести какую то информацию. Может полезную, а может не очень</p>
+          </div>
+          <!-- /.compare-text -->
+          <div class="compare-image">
+            <div id="container1">
+              
+              <img src="img/compare/гостиная классика 1.jpg" alt="">
+              <img src="img/compare/гостиная классика 1н.jpg" alt="">
+            </div>
+          </div>
+          <!-- /.compare-image -->
+        </div>
+        <!-- /.compare-block -->
+      </div>
+      <!-- /.compare-wrap -->
+  </div>
+  <!-- /.section compare -->
+
   <!-- РАЗДЕЛ С ФОРМОЙ ОБРАТНОЙ СВЯЗИ -->
   <div class="section contacts" id="contacts">
     <div class="container">
@@ -387,6 +424,7 @@
   </section>
   <!-- /.section follow -->
 
+  <!-- ПОДВАЛ САЙТА -->
   <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
@@ -431,7 +469,17 @@
   <script src="js/slick.min.js"></script>
   <script src="js/hero-slider.js"></script>
   <script src="js/follow-slider.js"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
 <!-- endbuild -->
+<script>
+  $(document).ready(function () {
+    $(function(){
+  $("#container1").twentytwenty();
+  $("#container2").twentytwenty();
+});
+});
+</script>
 
   <!-- <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/7YTs9?fs=1&vr=0&sd=1&thumbs=1&chromeless=0&logo=0" data-width="100%" data-height="640px"></script> -->
 </body>
