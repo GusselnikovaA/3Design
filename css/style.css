@@ -1122,7 +1122,7 @@ input.error {
 
 .edge-card__image {
   margin-top: 20px;
-  margin-right: 20px;
+  font-size: 42px;
   width: 7%;
 }
 
@@ -1365,7 +1365,7 @@ input.error {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 3200px;
+  height: 3300px;
 }
 
 .portfolio-card {
@@ -1627,5 +1627,18 @@ input.error {
 
 .footer-social__item a {
   color: #ffffff;
+}
+
+.project__hero {
+  background-image: url("../img/1/hero/1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#project_1 {
+  height: 4000px;
 }
 /*# sourceMappingURL=style.css.map */
