@@ -1,7 +1,9 @@
 .header 
   position: relative
+  // padding: 23px 0
   padding: 15px 0
   margin-top: 20px
+  // background-color: $medium-color
   z-index: 999
   &:before 
     content: ''
@@ -9,15 +11,17 @@
     background-color: $medium-color
     top: 0
     left: 0
+    // height: 66px
     height: 46px
     width: 100%
   &-wrap 
     position: relative
     display: flex
-    justify-content: flex-end
+    justify-content: space-between
     align-items: center
   &-logo 
     position: absolute
+    // top: -20px
     top: auto
     left: 0
     width: 80px
@@ -26,11 +30,21 @@
     // border-radius: 80px
     // background-color: $light-color
     z-index: 3
+  &_title 
+    // font-family: 'SONGER Grotesque'
+    letter-spacing: 4.5px
+    color: $light-color
+    font-size: 24px
+    margin-left: 100px
+    +thin
+    text-transform: uppercase
   &-list 
     display: flex
     text-transform: uppercase
+    +thin
     &__item
       margin-right: 30px 
+      letter-spacing: 1.2px
       &:last-child
         margin-right: 0
       a 
