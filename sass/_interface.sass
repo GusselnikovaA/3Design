@@ -54,6 +54,17 @@ input.error
   text-transform: uppercase
   letter-spacing: 2px
 
+.arrow 
+  z-index: 998
+  bottom: 10px
+  display: flex
+  justify-content: center
+  width: 100%
+  a
+    display: block
+    width: 40px
+    z-index: 999
+
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
   // HOVER эффекты блока HEADER 
@@ -75,6 +86,11 @@ input.error
           &:hover
             &:before 
               transform: scaleX(1)
+
+  .up 
+    &:hover
+      opacity: 1
+      cursor: pointer
 
   .portfolio
     &-card 
