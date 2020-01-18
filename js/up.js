@@ -9,7 +9,7 @@ $(function () {
     }
   });
 
-  up.on('click', function () {
+  $('#up,#logo-up').on('click', function () {
     $('html, body').animate({
       scrollTop: 0
     }, 800);

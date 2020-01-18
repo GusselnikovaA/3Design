@@ -449,7 +449,7 @@ input.error {
             transform: scaleX(1);
   }
   .up:hover {
-    opacity: 0.75;
+    opacity: 1;
     cursor: pointer;
   }
   .portfolio-card_hover:hover {
@@ -1235,7 +1235,7 @@ input.error {
 .up {
   position: fixed;
   right: 40px;
-  bottom: 33px;
+  bottom: 55px;
   opacity: .6;
   display: none;
   z-index: 9999;
@@ -1243,8 +1243,19 @@ input.error {
   width: 40px;
   height: 40px;
   border-radius: 40px;
+  border: 3px solid #ffffff;
   background-color: #404040;
-  padding: 5px;
+  font-size: 28px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -1587,6 +1598,29 @@ input.error {
           transform: translate(-5px, 0) rotate(-45deg);
 }
 
+.info {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  padding-bottom: 55px;
+}
+
+.info__title {
+  margin-bottom: 65px;
+  font-family: 'SONGER Grotesque';
+}
+
+.info-list {
+  text-transform: uppercase;
+  list-style: decimal;
+  font-size: 24px;
+  font-family: 'Proxima Nova Thin', sans-serif;
+}
+
+.info-list__item {
+  margin: 16px 0;
+  padding-left: 10px;
+}
+
 .portfolio {
   padding-top: 85px;
 }
@@ -1847,6 +1881,7 @@ input.error {
 
 .footer-logo {
   width: 80px;
+  cursor: pointer;
 }
 
 .footer-social__list {

@@ -29,6 +29,7 @@
           <nav class="header-nav">
             <ul class="list header-list">
               <li class="header-list__item"><a href="#edge">О нас</a></li>
+              <li class="header-list__item"><a href="#steps">Этапы работ</a></li>
               <li class="header-list__item"><a href="#portfolio">Проекты</a></li>
               <li class="header-list__item"><a href="#contacts">Контакты</a></li>
             </ul>
@@ -74,7 +75,7 @@
 
     <!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
     <div class="up" id="up">
-      <img src="img/hero/down.png" alt="стрелка вниз">
+      <i class="fas fa-chevron-up"></i>
     </div>
     <!-- /.hero-arrow -->
 
@@ -133,8 +134,7 @@
           <!-- /.edge-card__image -->
           <div class="edge-card__content">
             <h2 class="edge-card__title">Не нужны ссылки на модели</h2>
-            <p class="edge-card__text">Мы сами моделируем корпусную мебель, любую по вашему проекту. Вам не нужно
-              подбирать 3д модели, мы сделаем это за вас.</p>
+            <p class="edge-card__text">Вам не нужно подбирать 3D модели, мы сделаем это за вас. Корпусную мебель, любую по вашему проекту, мы моделируем сами.</p>
           </div>
           <!-- /.edge-card__content -->
         </div>
@@ -171,8 +171,7 @@
     </div>
     <!-- /.container -->
     <div class="edge-main">
-      <p class="edge-main__text">У НАС НЕТ СЛОЖНЫХ РАСЧЕТОВ СТОИМОСТИ ВИЗУАЛИЗАЦИИ. <br> 1 м <sup>2</sup> ПОМЕЩЕНИЯ –
-        500 РУБЛЕЙ</p>
+      <p class="edge-main__text">У НАС НЕТ СЛОЖНЫХ РАСЧЕТОВ СТОИМОСТИ ВИЗУАЛИЗАЦИИ. <br> 1 м <sup>2</sup> ПОМЕЩЕНИЯ –500 РУБЛЕЙ</p>
     </div>
     <!-- /.edge-card -->
   </section>
@@ -180,7 +179,7 @@
 
 
   <!-- РАЗДЕЛ С ЭТАПАМИ РАБОТЫ -->
-  <section class="section steps">
+  <section class="section steps" id="steps">
     <div class="container">
       <h1 class="title steps__title">Этапы работы</h1>
       <div class="steps-content">
@@ -190,18 +189,18 @@
             <i></i>
             <h2 class="steps__subtitle">Получение технического задания</h2>
             <ul class="steps-text">
-              <li class="steps-text__item">Чертежи планировки объекта</li>
-              <li class="steps-text__item">Развертка стен с указанием размеров (при необходимости)</li>
-              <li class="steps-text__item">Список отделочных материалов с указанием цветов и фактур</li>
-              <li class="steps-text__item">План расположения мебели с размерами</li>
-              <li class="steps-text__item">Артикулы или фото мебели с указанием видов материала, цвета</li>
-              <li class="steps-text__item">План расположения светильников, названия моделей</li>
-              <li class="steps-text__item">Информация о каких-либо дополнительных деталях, декоре, предпочтениях
-                заказчика, особенностях интерьера</li>
-              <li class="steps-text__item">Фото похожих проектов в качестве примера по настроению и освещению</li>
-              <li class="steps-text__item">ТЗ вы можете оформить в виде таблицы, коллажа или собрать текстовый файл и
-                отдельно картинки, как вам удобно и привычно.
-                Вносится предоплата в размере 50% от стоимости</li>
+              <li class="steps-text__item">Вам необходимо ознакомиться со списком необходимых материалов для для ТЗ. <br> Список ниже по сайту</li>
+              <li class="steps-text__item">ТЗ вы можете оформить в виде таблицы, коллажа или собрать текстовый файл и отдельно картинки. Как вам удобно и привычно</li>
+            </ul>
+          </li>
+          <li class="steps-list__item">
+            <input type="checkbox" checked>
+            <i></i>
+            <h2 class="steps__subtitle">Начало работ</h2>
+            <ul class="steps-text">
+              <li class="steps-text__item">Мы проверяем техническое задание</li>
+              <li class="steps-text__item">Обговариваем нюансы работы</li>
+              <li class="steps-text__item">Вносится предоплата в размере 50% от стоимости</li>
             </ul>
           </li>
           <li class="steps-list__item">
@@ -216,11 +215,11 @@
           <li class="steps-list__item">
             <input type="checkbox" checked>
             <i></i>
-            <h2 class="steps__subtitle">Рендер на согласование</h2>
+            <h2 class="steps__subtitle">Отправляем визуализацию</h2>
             <ul class="steps-text">
-              <li class="steps-text__item">После внесения корректировок, мы отправляем вам 3д визуализацию на
+              <li class="steps-text__item">После внесения корректировок, мы отправляем вам 3D визуализацию на
                 согласование с заказчиком</li>
-              <li class="steps-text__item">После согласования с заказчиком, вы вносите корректировки</li>
+              <li class="steps-text__item">После обсуждения с заказчиком, вы вносите корректировки</li>
             </ul>
           </li>
           <li class="steps-list__item">
@@ -228,14 +227,13 @@
             <i></i>
             <h2 class="steps__subtitle">Финальный рендер</h2>
             <ul class="steps-text">
-              <li class="steps-text__item">Выполняем корректировки после согласования с заказчиком и отправляем на
-                утверждение.</li>
+              <li class="steps-text__item">Выполняем корректировки после согласования с заказчиком и отправляем на утверждение дизайнеру</li>
               <li class="steps-text__item">В зависимости от пожелания заказчика, делаем либо
-                предфинальный рендер, после которого можно еще раз обсудить с заказчиком
-                и внести правки, либо, если все согласовано, рендерим финальное
-                изображение.</li>
-              <li class="steps-text__item">После получения финальных изображений в формате JPG с разрешением не
-                менее 2000 точек по большей стороне, вы вносите остаток оплаты</li>
+                пред-финальный рендер, после которого можно еще раз обсудить с заказчиком
+                и внести правки, либо, если все согласовано, делаем финальные
+                изображения</li>
+              <li class="steps-text__item">Получаете финальные изображения в формате JPG с разрешением не менее 2000 точек по большей стороне</li>
+              <li class="steps-text__item">Вы вносите остаток оплаты</li>
             </ul>
           </li>
         </ul>
@@ -245,6 +243,27 @@
     <!-- /.container -->
   </section>
   <!-- /.section steps -->
+
+  <!-- РАЗДЕЛ С НЕОБХОДИМОЙ ИНФОРМАЦИЕЙ ОТ КЛИЕНТА ДЛЯ ТЗ -->
+  <div class="section info">
+    <div class="container">
+      <h1 class="title info__title">Какая информация нужна от вас для ТЗ?</h1>
+      <ol class="list info-list">
+        <li class="info-list__item">Чертежи планировки объекта</li>
+        <li class="info-list__item">Развертка стен с указанием размеров (при необходимости)</li>
+        <li class="info-list__item">Список отделочных материалов с указанием цветов и фактур</li>
+        <li class="info-list__item">План расположения мебели с размерами</li>
+        <li class="info-list__item">Артикулы или фото мебели с указанием видов материала, цвета</li>
+        <li class="info-list__item">План расположения светильников, названия моделей</li>
+        <li class="info-list__item">Информация о каких-либо дополнительных деталях, декоре, предпочтениях
+          заказчика, особенностях интерьера</li>
+        <li class="info-list__item">Фото похожих проектов в качестве примера по настроению и освещению</li>
+      </ol>
+      <!-- /.info-list -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.section info -->
 
   <!-- РАЗДЕЛ С ГАЛЕРЕЕЙ ПОРТФОЛИО -->
   <div class="section portfolio" id="portfolio">
@@ -361,14 +380,14 @@
                   <i class="fab fa-telegram-plane"></i>
                 </a>
               </li>
+              <li class="contacts-social__item pinterest">
+                <a href="https://www.pinterest.ru/pinestudio3d" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </li>
               <li class="contacts-social__item behance">
                 <a href="https://www.behance.net/pinestudio3d" target="_blank">
                   <i class="fab fa-behance"></i>
-                </a>
-              </li>
-              <li class="contacts-social__item pinterest">
-                <a href="https://www.pinterest.ru/pinestudio3d" target="_blank">
-                  <i class="fab fa-pinterest"></i>
                 </a>
               </li>
             </ul>
@@ -483,8 +502,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrap">
-        <div class="footer-logo" >
-          <!-- <img src="img/footer/White.png" alt=""> -->
+        <div class="footer-logo" id="logo-up">
+          <img src="img/footer/White.png" alt="">
         </div>
         <!-- /.footer-logo -->
         <div class="header_title">
@@ -506,6 +525,11 @@
             <li class="footer-social__item telegram">
               <a href="#" target="_blank">
                 <i class="fab fa-telegram-plane"></i>
+              </a>
+            </li>
+            <li class="footer-social__item pinterest">
+              <a href="https://www.pinterest.ru/pinestudio3d" target="_blank">
+                <i class="fab fa-pinterest-p"></i>
               </a>
             </li>
             <li class="footer-social__item behance">
