@@ -19,7 +19,7 @@
     <div class="container">
       <div class="header-wrap">
         <div class="header-logo">
-          <!-- <img src="img/header/круглый белый внутри.png" alt=""> -->
+          <img src="img/header/круглый белый внутри.png" alt="">
         </div>
         <!-- /.header-logo -->
         <div class="header_title">
@@ -343,7 +343,7 @@
       <div class="compare-wrap">
         <div class="compare-block">
           <div class="compare-image">
-            <div id="container2">
+            <div id="container1" class='twentytwenty-container'>
               <img src="img/compare/Муляр спальня гостевая 1 правка сетка.jpg" alt="">
               <img src="img/compare/Муляр спальня гостевая 1 правка.jpg" alt="">
             </div>
@@ -365,8 +365,7 @@
           </div>
           <!-- /.compare-text -->
           <div class="compare-image">
-            <div id="container1">
-
+            <div id="container2" class='twentytwenty-container'>
               <img src="img/compare/гостиная классика 1.jpg" alt="">
               <img src="img/compare/гостиная классика 1н.jpg" alt="">
             </div>
@@ -593,8 +592,15 @@
     <script src="js/arrow.js"></script>
     <script src="js/up.js"></script>
     <!-- endbuild -->
+
     <script>
-      $(document).ready(function () {
+      // $(document).ready(function () {
+      //   $(function () {
+      //     $("#container1").twentytwenty();
+      //     $("#container2").twentytwenty();
+      //   });
+      // });
+      $(window).on('load',function () {
         $(function () {
           $("#container1").twentytwenty();
           $("#container2").twentytwenty();

@@ -3,6 +3,7 @@ $(function () {
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 10) {
+      up.addClass('up_flex');
       up.show('slow');
     } else {
       up.hide('slow');

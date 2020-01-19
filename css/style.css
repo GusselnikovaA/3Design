@@ -1247,6 +1247,9 @@ input.error {
   background-color: #404040;
   font-size: 28px;
   color: #fff;
+}
+
+.up_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
