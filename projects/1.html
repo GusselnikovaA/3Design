@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Pine-studio.</title>
+  <title>Pine-studio</title>
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../default-skin/default-skin.css">
+  <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <div class="container">
       <div class="header-wrap">
         <div class="header-logo">
-          <img src="../img/header/круглый белый внутри.png" alt="">
+          <a href="../index.html"><img src="../img/header/круглый белый внутри.png" alt=""></a>
         </div>
         <!-- /.header-logo -->
         <div class="header_title">
@@ -28,9 +29,10 @@
         <!-- /.header_title -->
         <nav class="header-nav">
           <ul class="list header-list">
-            <li class="header-list__item"><a href="#edge">О нас</a></li>
-            <li class="header-list__item"><a href="#portfolio">Проекты</a></li>
-            <li class="header-list__item"><a href="#contacts">Контакты</a></li>
+            <li class="header-list__item"><a href="../index.html#edge">О нас</a></li>
+            <li class="header-list__item"><a href="../index.html#steps">Этапы работ</a></li>
+            <li class="header-list__item"><a href="../index.html#portfolio">Проекты</a></li>
+            <li class="header-list__item"><a href="../index.html#contacts">Контакты</a></li>
           </ul>
           <!-- /.list header-list -->
           <button class="header-burger header-burger_alert"><span></span></button>
@@ -43,81 +45,140 @@
   </header>
   <!-- /.header -->
 
+
+  <!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
+  <div class="up" id="up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <!-- /.hero-arrow -->
+
+
+  <!-- ПЕРВИЙ ВИДИМЫй БЛОК НА СТРАНИЦЕ hero -->
   <div class="project__hero">
     <div class="project__hero__content">
-      <span>Большая квартира для семьи</span>
-      <span>Дизайн проект - Ненашкина Евгения</span>
+      <span class="title project__title">Большая квартира для семьи</span>
+      <span class="project__subtitle">Дизайн проект - Ненашкина Евгения</span>
     </div>
   </div>
   <!-- /.project__hero -->
 
-      <!-- Root element of PhotoSwipe. Must have class pswp. -->
-      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-        <!-- Background of PhotoSwipe. 
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
            It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-    
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-    
-          <!-- Container that holds slides. 
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. 
               PhotoSwipe keeps only 3 of them in the DOM to save memory.
               Don't modify these 3 pswp__item elements, data is added later on. -->
-          <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-          </div>
-    
-          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-          <div class="pswp__ui pswp__ui--hidden">
-    
-            <div class="pswp__top-bar">
-    
-              <!--  Controls are self-explanatory. Order can be changed. -->
-    
-              <div class="pswp__counter"></div>
-    
-              <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-    
-              <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-    
-              <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-    
-              <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-              <!-- element will get class pswp__preloader--active when preloader is running -->
-              <div class="pswp__preloader">
-                <div class="pswp__preloader__icn">
-                  <div class="pswp__preloader__cut">
-                    <div class="pswp__preloader__donut"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-              <div class="pswp__share-tooltip"></div>
-            </div>
-    
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-    
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-    
-            <div class="pswp__caption">
-              <div class="pswp__caption__center"></div>
-            </div>
-    
-          </div>
-    
-        </div>
-    
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
       </div>
 
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <!--  Controls are self-explanatory. Order can be changed. -->
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
 
-  <div class="portfolio ">
+    </div>
+  </div>
+
+  <div class="portfolio">
+    <div class="container">
+      <div class="portfolio-cards" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/1.jpg" itemprop="contentUrl" data-size="1400x2000">
+            <img src="../img/1/render/1.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/2.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/2.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/3.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/3.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/4.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/4.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/5.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/5.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/6.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/6.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/7.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/7.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/8.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/8.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+        <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="../img/1/render/9.jpg" itemprop="contentUrl" data-size="2000x1800">
+            <img src="../img/1/render/9.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+        </figure>
+
+      </div>
+      <!-- /.portfolio-cards -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.portfolio -->
+
+
+  <!-- <div class="portfolio ">
     <div class="container">
       <div class="portfolio-cards" id="project_1">
         <div class="portfolio-card">
@@ -150,45 +211,107 @@
         <div class="portfolio-card">
           <img src="../img/1/render/10.jpg" alt="">
         </div>
-      </div>
-      <!-- /.portfolio-wrap -->
-    </div>
-    <!-- /.container -->
-  </div>
+      </div> -->
+  <!-- /.portfolio-wrap -->
+  <!-- </div> -->
+  <!-- /.container -->
+  <!-- </div> -->
   <!-- /.project__portfolio -->
+
 
   <script src="https://static.kuula.io/embed.js"
     data-kuula="https://kuula.co/share/7YTs9?fs=1&vr=0&sd=1&thumbs=1&chromeless=0&logo=0" data-width="100%"
     data-height="640px"></script>
+
+
+  <!-- ПОДВАЛ САЙТА -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-logo">
+          <a href="../index.html"><img src="../img/footer/White.png" alt=""></a>
+        </div>
+        <!-- /.footer-logo -->
+        <div class="header_title">
+          студия 3D визуализации интерьеров
+        </div>
+        <!-- /.header_title -->
+        <div class="footer-social">
+          <ul class="footer-social__list list">
+            <li class="footer-social__item whatsapp">
+              <a href="https://api.whatsapp.com/send?phone=79215623327" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li class="footer-social__item instagram">
+              <a href="https://www.instagram.com/mariyevskaya/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="footer-social__item telegram">
+              <a href="#" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+            </li>
+            <li class="footer-social__item pinterest">
+              <a href="https://www.pinterest.ru/pinestudio3d" target="_blank">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li class="footer-social__item behance">
+              <a href="https://www.behance.net/pinestudio3d" target="_blank">
+                <i class="fab fa-behance"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- /.footer-list -->
+        </div>
+        <!-- /.footer-social -->
+      </div>
+      <!-- /.footer-wrap -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+
+
   <script src="../js/photoswipe.js"></script>
   <script src="../js/photoswipe-ui-default.js"></script>
-  <script>
-  var pswpElement = document.querySelectorAll('.pswp')[0];
+  <script src="../js/photoswipe-portfolio-cards.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/up.js"></script>
 
-// build items array
-var items = [
-    {
-        src: 'https://placekitten.com/600/400',
-        w: 600,
-        h: 400
-    },
-    {
-        src: 'https://placekitten.com/1200/900',
-        w: 1200,
-        h: 900
-    }
-];
+  <!-- <script>
+    var pswpElement = document.querySelectorAll('.pswp')[0];
 
-// define options (if needed)
-var options = {
-    // optionName: 'option value'
-    // for example:
-    index: 0 // start at first slide
-};
+    // build items array
+    var items = [{
+        src: '../img/1/render/1.jpg',
+        w: 1400,
+        h: 2000
+      },
+      {
+        src: '../img/1/render/2.jpg',
+        w: 2000,
+        h: 1800
+      }
+    ];
 
-// Initializes and opens PhotoSwipe
-var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-gallery.init();</script>
+    // define options (if needed)
+    var options = {
+      // optionName: 'option value'
+      // for example:
+      index: 0 // start at first slide
+    };
+
+    // Initializes and opens PhotoSwipe
+    $('.portfolio-card').on('click', function () {
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+  });
+
+  </script> -->
+
 
 </body>
 
