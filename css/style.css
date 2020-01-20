@@ -1687,7 +1687,7 @@ input.error {
 }
 
 .portfolio_height {
-  height: 3320px;
+  height: 3630px;
 }
 
 .portfolio-card {
@@ -1992,10 +1992,14 @@ input.error {
 }
 
 .project-portfolio_1 {
-  height: 4000px;
+  height: 3200px;
 }
 
 .project-portfolio_2 {
   height: 3600px;
+}
+
+.project-portfolio_3 {
+  height: 3100px;
 }
 /*# sourceMappingURL=style.css.map */
