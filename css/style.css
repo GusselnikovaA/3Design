@@ -1942,7 +1942,6 @@ input.error {
 }
 
 .project__hero {
-  background-image: url("../img/1/hero/1.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -1961,6 +1960,18 @@ input.error {
   color: #ffffff;
 }
 
+.project_1 {
+  background-image: url("../img/1/hero/1.jpg");
+}
+
+.project_2 {
+  background-image: url("../img/2/hero/6.jpg");
+}
+
+.project_3 {
+  background-image: url("../img/3/hero/20.jpg");
+}
+
 .project__title {
   display: block;
   margin-bottom: 20px;
@@ -1971,7 +1982,11 @@ input.error {
   font-family: 'Proxima Nova Thin', sans-serif;
 }
 
-#project_1 {
+.project-portfolio_1 {
   height: 4000px;
+}
+
+.project-portfolio_2 {
+  height: 3600px;
 }
 /*# sourceMappingURL=style.css.map */

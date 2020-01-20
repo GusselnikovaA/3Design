@@ -1,6 +1,5 @@
 .project
   &__hero
-    background-image: url("../img/1/hero/1.jpg")
     background-position: center center
     background-size: cover
     background-attachment: fixed
@@ -15,13 +14,20 @@
       left: 0
       background-color: $medium-color
       color: $light-color
+  &_1
+    background-image: url("../img/1/hero/1.jpg")
+  &_2 
+    background-image: url("../img/2/hero/6.jpg")
+  &_3 
+    background-image: url("../img/3/hero/20.jpg")
   &__title 
     display: block
     margin-bottom: 20px
   &__subtitle
     font-size: 24px 
     +thin
-
-  
-#project_1 
-  height: 4000px
+  &-portfolio
+    &_1
+      height: 4000px
+    &_2 
+      height: 3600px
