@@ -54,11 +54,21 @@
 
 
   <!-- ПЕРВИЙ ВИДИМЫй БЛОК НА СТРАНИЦЕ hero -->
-  <div class="project__hero project_1">
+  <div class="hero project__hero project_1">
     <div class="project__hero__content">
       <span class="title project__title">Большая квартира для семьи</span>
       <span class="project__subtitle">Дизайн проект - Ненашкина Евгения</span>
     </div>
+    <div class="arrow hero-arrow">
+      <a href="#portfolio">
+        <img src="../img/hero/down.png" alt="тонкая двойная стрелка вниз">
+      </a>
+    </div>
+    <!-- /.hero-arrow -->
+    <div class="hero-logo">
+      <img src="../img/footer/White.png" alt="Логотип студии pine-studio">
+    </div>
+    <!-- /.hero-logo -->
   </div>
   <!-- /.project__hero -->
 
@@ -113,7 +123,7 @@
     </div>
   </div>
 
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="container">
       <div class="portfolio-cards project-portfolio_1" itemscope itemtype="http://schema.org/ImageGallery">
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -280,7 +290,7 @@
   <script src="../js/photoswipe-portfolio-cards.js"></script>
   <script src="../js/jquery-3.4.1.min.js"></script>
   <script src="../js/up.js"></script>
-
+  <script src="../js/arrow.js"></script>
   <!-- <script>
     var pswpElement = document.querySelectorAll('.pswp')[0];
 

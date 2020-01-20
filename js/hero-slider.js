@@ -9,7 +9,16 @@ $(document).ready(function () {
     fade: true,
     speed: 300,
     cssEase: 'easeInOutBack',
-    infinite: false
+    infinite: false,
+    edgeFriction: 1
   });
+
+  $('.hero-slider').on('beforeChange', function(e, slick, current, next){
+    if (next === slick.slideCount-1){
+       slick.autoPlay = false;
+    }
+ });
 });
+
+
 

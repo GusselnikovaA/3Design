@@ -1349,6 +1349,14 @@ input.error {
   position: absolute;
 }
 
+.hero-logo {
+  position: absolute;
+  width: 100px;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0.6;
+}
+
 .edge__title {
   margin-bottom: 85px;
 }
@@ -1949,8 +1957,6 @@ input.error {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 100vh;
-  margin-top: -80px;
   position: relative;
 }
 
