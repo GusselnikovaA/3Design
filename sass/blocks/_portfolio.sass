@@ -6,12 +6,16 @@
     align-content: center
     flex-direction: column
     flex-wrap: wrap
-    height: 3300px
+  &_height
+    height: 3320px
   &-card 
     width: 650px
     // width: 49% 
     margin: 20px
     position: relative
+    img 
+      display: block
+      min-height: 100%
     &_hover
       &:before
         content: ''
@@ -24,6 +28,3 @@
         // background-color: $medium-color
         opacity: 0
         transition: 0.2s
-      img 
-        display: block
-        min-height: 100%

@@ -1676,13 +1676,21 @@ input.error {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 3300px;
+}
+
+.portfolio_height {
+  height: 3320px;
 }
 
 .portfolio-card {
   width: 650px;
   margin: 20px;
   position: relative;
+}
+
+.portfolio-card img {
+  display: block;
+  min-height: 100%;
 }
 
 .portfolio-card_hover:before {
@@ -1697,11 +1705,6 @@ input.error {
   opacity: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.portfolio-card_hover img {
-  display: block;
-  min-height: 100%;
 }
 
 .compare {
