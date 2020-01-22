@@ -11,4 +11,14 @@
   &_dark
     background-color: #1f1b18
     color: $light-color
+
+@media (max-width: 750px)
+  .compare 
+    &-block 
+      flex-direction: column
+      &:first-child 
+        .compare-text
+          order: -1
+    &-text, &-image 
+      width: 100%
     
