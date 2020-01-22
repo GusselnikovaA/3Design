@@ -9,6 +9,7 @@ $(document).ready(function () {
     fade: true,
     speed: 300,
     cssEase: 'easeInOutBack',
+    adaptiveHeight: true,
     infinite: false,
     edgeFriction: 1
   });

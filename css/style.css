@@ -585,6 +585,7 @@ input.error {
 
 .slick-slide img {
   display: block;
+  width: 100%;
 }
 
 .slick-slide.slick-loading img {
@@ -1339,6 +1340,7 @@ input.error {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .hero-slider {
