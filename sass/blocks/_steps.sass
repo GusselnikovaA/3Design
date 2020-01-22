@@ -99,8 +99,8 @@
           @extend .transition
           position: absolute
           background-color: $black
-          width: 6px
-          height: 18px 
+          width: 2px
+          height: 15px 
         // стрелки их положение в обратную сторону левая сторона
         &:before 
           transform: translate( -5px , 0 ) rotate( 45deg ) 
@@ -143,6 +143,12 @@
       margin-bottom: 0px
     &__subtitle 
       font-size: 20px
+
+@media (max-width: 750px)
+  .steps 
+    &__subtitle 
+      font-size: 16px
+      text-align: left
 
       
 

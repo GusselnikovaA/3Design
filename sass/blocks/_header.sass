@@ -22,7 +22,7 @@
     left: 0
     width: 100px
     z-index: 3
-  &_title 
+  &__title 
     margin-left: 150px
   &-list 
     display: flex
@@ -44,7 +44,7 @@
   .header 
     &-logo 
       width: 80px
-    &_title 
+    &__title 
       margin-left: 90px
     &-list 
       &__item
@@ -65,5 +65,12 @@
       background-color: $dark-color
       top: 0
       height: 66px
+    &__title 
+      max-width: 400px
     &-logo 
       width: 60px
+
+@media (max-width: 444px)
+  .header 
+    &:before
+      height: 84px

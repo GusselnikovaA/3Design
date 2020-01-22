@@ -429,7 +429,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   font-family: 'SONGER Grotesque Bold';
-  letter-spacing: 4pxs;
+  letter-spacing: 4px;
 }
 
 .page-title {
@@ -518,7 +518,14 @@ input.error {
     width: 30px;
   }
   .title {
-    font-size: 30px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 550px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1362,7 +1369,7 @@ input.error {
   z-index: 3;
 }
 
-.header_title {
+.header__title {
   margin-left: 150px;
 }
 
@@ -1396,7 +1403,7 @@ input.error {
   .header-logo {
     width: 80px;
   }
-  .header_title {
+  .header__title {
     margin-left: 90px;
   }
   .header-list__item {
@@ -1423,8 +1430,17 @@ input.error {
     top: 0;
     height: 66px;
   }
+  .header__title {
+    max-width: 400px;
+  }
   .header-logo {
     width: 60px;
+  }
+}
+
+@media (max-width: 444px) {
+  .header:before {
+    height: 84px;
   }
 }
 
@@ -1472,7 +1488,10 @@ input.error {
     margin-top: 0px;
   }
   .hero-logo {
-    width: 60px;
+    display: none;
+  }
+  .hero-arrow {
+    display: none;
   }
 }
 
@@ -1546,9 +1565,6 @@ input.error {
 }
 
 @media (max-width: 1150px) {
-  .edge {
-    padding-bottom: 0;
-  }
   .edge__title {
     margin-bottom: 60px;
   }
@@ -1559,11 +1575,49 @@ input.error {
 }
 
 @media (max-width: 750px) {
+  .edge__title {
+    margin-bottom: 48px;
+  }
   .edge-card {
     width: 100%;
   }
   .edge-main__text {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .edge__title {
+    margin-bottom: 28px;
+  }
+  .edge-card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .edge-card:last-child .edge-card__text {
+    border-bottom: none;
+  }
+  .edge-card__title {
+    text-align: center;
+    font-size: 16px;
+  }
+  .edge-card__text {
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .edge-card__image {
+    display: none;
+  }
+  .edge-main {
+    margin-top: 0;
+  }
+  .edge-main__text {
+    width: 100%;
+    font-size: 16px;
   }
 }
 
@@ -1710,8 +1764,8 @@ input.error {
   content: "";
   position: absolute;
   background-color: #000000;
-  width: 6px;
-  height: 18px;
+  width: 2px;
+  height: 15px;
 }
 
 .steps-list__item i:before {
@@ -1768,6 +1822,13 @@ input.error {
   }
   .steps__subtitle {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .steps__subtitle {
+    font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -1857,6 +1918,30 @@ input.error {
   }
 }
 
+@media (max-width: 750px) {
+  .info__subtitle {
+    margin-bottom: 28px;
+  }
+  .info__card {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info__text {
+    text-align: left;
+  }
+  .info__image {
+    margin-right: 10px;
+    font-size: 36px;
+    width: 45px;
+  }
+}
+
 .portfolio {
   padding: 0;
 }
@@ -1942,6 +2027,17 @@ input.error {
   .portfolio-card {
     max-width: 250px;
     margin: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolio-cards {
+    padding-top: 10px;
+    height: 3070px;
+  }
+  .portfolio-card {
+    max-width: 100%;
+    margin: 5px 0;
   }
 }
 
@@ -2037,6 +2133,10 @@ input.error {
   .follow__title {
     margin-top: 0px;
   }
+  .follow-slider__image {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
 }
 
 .contacts {
@@ -2071,6 +2171,7 @@ input.error {
 
 .contacts__title {
   margin-bottom: 50px;
+  font-family: 'SONGER Grotesque';
 }
 
 .contacts-phone, .contacts-email {
