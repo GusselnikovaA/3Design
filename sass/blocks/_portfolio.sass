@@ -1,5 +1,5 @@
 .portfolio
-  padding-top: 85px
+  padding: 0
   &-cards 
     display: flex
     align-items: center
@@ -9,8 +9,7 @@
   &_height
     height: 3630px
   &-card 
-    width: 650px
-    // width: 49% 
+    max-width: 650px
     margin: 20px
     position: relative
     img 
@@ -28,3 +27,34 @@
         // background-color: $medium-color
         opacity: 0
         transition: 0.2s
+
+@media (max-width: 1350px)
+  .portfolio
+    &-cards 
+      height: 3110px
+    &-card 
+      max-width: 550px
+
+@media (max-width: 1150px)
+  .portfolio
+    &-cards 
+      height: 2490px
+    &-card 
+      max-width: 450px
+      margin: 10px
+
+@media (max-width: 950px)
+  .portfolio
+    &-cards 
+      height: 1950px
+    &-card 
+      max-width: 350px
+
+
+@media (max-width: 750px)
+  .portfolio
+    &-cards 
+      height: 1370px
+    &-card 
+      max-width: 250px
+      margin: 5px

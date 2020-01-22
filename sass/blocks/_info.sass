@@ -1,7 +1,7 @@
 .info 
   background-color: $dark-color
   color: $light-color
-  padding-bottom: 55px
+  // padding-bottom: 55px
   &__title 
     margin-bottom: 20px
     font-family: 'SONGER Grotesque'
@@ -28,3 +28,14 @@
     min-height: 52px
   &__text 
     text-align: center
+
+
+@media (max-width: 1150px)
+  .info
+    &__subtitle  
+      font-size: 20px
+      margin-bottom: 60px
+    &__card 
+      width: 30%
+    &__text 
+      +thin

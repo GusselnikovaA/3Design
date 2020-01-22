@@ -342,6 +342,52 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Thin';
+  src: url("../fonts/ProximaNova/ProximaNovaT-Thin.eot");
+  src: url("../fonts/ProximaNova/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SONGER Grotesque';
+  src: url("../fonts/Songergrotesque/Songergrotesque.woff") format("woff"), url("../fonts/Songergrotesque/Songergrotesque.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SONGER Grotesque Bold';
+  src: url("../fonts/Songergrotesque/Songergrotesquebold.woff") format("woff"), url("../fonts/Songergrotesque/Songergrotesquebold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -374,6 +420,7 @@ a {
 
 .section {
   padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .title {
@@ -382,7 +429,33 @@ a {
   text-transform: uppercase;
   text-align: center;
   font-family: 'SONGER Grotesque Bold';
-  letter-spacing: 4px;
+  letter-spacing: 4pxs;
+}
+
+.page-title {
+  letter-spacing: 4.5px;
+  color: #ffffff;
+  font-family: 'Proxima Nova Thin', sans-serif;
+  text-transform: uppercase;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.social__item {
+  font-size: 46px;
+}
+
+.social__item a {
+  color: #ffffff;
 }
 
 .input {
@@ -425,6 +498,19 @@ input.error {
   display: block;
   width: 40px;
   z-index: 999;
+}
+
+@media (max-width: 1150px) {
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .social__item {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -612,52 +698,6 @@ input.error {
 
 .slick-arrow.slick-hidden {
   display: none;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Light';
-  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
-  src: url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Thin';
-  src: url("../fonts/ProximaNova/ProximaNovaT-Thin.eot");
-  src: url("../fonts/ProximaNova/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaT-Thin.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Regular';
-  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
-  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
-  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SONGER Grotesque';
-  src: url("../fonts/Songergrotesque/Songergrotesque.woff") format("woff"), url("../fonts/Songergrotesque/Songergrotesque.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SONGER Grotesque Bold';
-  src: url("../fonts/Songergrotesque/Songergrotesquebold.woff") format("woff"), url("../fonts/Songergrotesque/Songergrotesquebold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @-webkit-keyframes flipdown {
@@ -1262,6 +1302,12 @@ input.error {
           justify-content: center;
 }
 
+@media (max-width: 1350px) {
+  .up {
+    right: 20px;
+  }
+}
+
 .header {
   position: relative;
   padding: 15px 0;
@@ -1301,11 +1347,7 @@ input.error {
 }
 
 .header_title {
-  letter-spacing: 4.5px;
-  color: #ffffff;
   margin-left: 150px;
-  font-family: 'Proxima Nova Thin', sans-serif;
-  text-transform: uppercase;
 }
 
 .header-list {
@@ -1334,10 +1376,31 @@ input.error {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .header-logo {
+    width: 80px;
+  }
+  .header_title {
+    margin-left: 90px;
+  }
+  .header-list__item {
+    margin-right: 15px;
+    letter-spacing: 1.2px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-nav {
+    display: none;
+  }
+  .header-burger {
+    display: block;
+  }
+}
+
 .hero {
   margin-top: -80px;
   min-height: 700px;
-  height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -1357,6 +1420,25 @@ input.error {
   bottom: 10px;
   right: 15px;
   opacity: 0.6;
+}
+
+@media (min-width: 1150px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    min-height: 0;
+  }
+  .hero-logo {
+    width: 80px;
+  }
+}
+
+.edge {
+  padding-bottom: 0;
 }
 
 .edge__title {
@@ -1385,7 +1467,6 @@ input.error {
 }
 
 .edge-card__image {
-  margin-top: 20px;
   font-size: 42px;
   width: 7%;
 }
@@ -1396,11 +1477,15 @@ input.error {
 
 .edge-card__title {
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .edge-card__text {
   line-height: 1.55;
   color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .edge-main {
@@ -1419,6 +1504,19 @@ input.error {
   margin: auto;
   text-align: center;
   line-height: 1.55;
+}
+
+@media (max-width: 1150px) {
+  .edge {
+    padding-bottom: 0;
+  }
+  .edge__title {
+    margin-bottom: 60px;
+  }
+  .edge-card__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .transition, .steps-text, .steps-list__item i:before, .steps-list__item i:after {
@@ -1446,7 +1544,6 @@ input.error {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 55px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
   position: relative;
 }
@@ -1611,10 +1708,15 @@ input.error {
           transform: translate(-5px, 0) rotate(-45deg);
 }
 
+@media (max-width: 1150px) {
+  .steps__title {
+    margin-bottom: 40px;
+  }
+}
+
 .info {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
-  padding-bottom: 55px;
 }
 
 .info__title {
@@ -1667,8 +1769,21 @@ input.error {
   text-align: center;
 }
 
+@media (max-width: 1150px) {
+  .info__subtitle {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  .info__card {
+    width: 30%;
+  }
+  .info__text {
+    font-family: 'Proxima Nova Thin', sans-serif;
+  }
+}
+
 .portfolio {
-  padding-top: 85px;
+  padding: 0;
 }
 
 .portfolio-cards {
@@ -1693,7 +1808,7 @@ input.error {
 }
 
 .portfolio-card {
-  width: 650px;
+  max-width: 650px;
   margin: 20px;
   position: relative;
 }
@@ -1715,6 +1830,44 @@ input.error {
   opacity: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media (max-width: 1350px) {
+  .portfolio-cards {
+    height: 3110px;
+  }
+  .portfolio-card {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .portfolio-cards {
+    height: 2490px;
+  }
+  .portfolio-card {
+    max-width: 450px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .portfolio-cards {
+    height: 1950px;
+  }
+  .portfolio-card {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio-cards {
+    height: 1370px;
+  }
+  .portfolio-card {
+    max-width: 250px;
+    margin: 5px;
+  }
 }
 
 .compare {
@@ -1744,10 +1897,6 @@ input.error {
 .compare_dark {
   background-color: #1f1b18;
   color: #ffffff;
-}
-
-.follow {
-  padding-bottom: 55px;
 }
 
 .follow__title {
@@ -1795,7 +1944,6 @@ input.error {
 .contacts {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
-  padding-bottom: 55px;
 }
 
 .contacts-wrap {
@@ -1838,25 +1986,12 @@ input.error {
 }
 
 .contacts-social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
   margin-top: 0;
-  padding: 0;
   margin-bottom: 50px;
 }
 
 .contacts-social__item {
-  font-size: 46px;
   margin-right: 25px;
-}
-
-.contacts-social__item a {
-  color: #ffffff;
 }
 
 .contacts-social__item:last-child {
@@ -1909,6 +2044,54 @@ input.error {
           transform: scaleY(0);
 }
 
+@media (max-width: 1150px) {
+  .contacts-info {
+    padding-left: 50px;
+  }
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+  .contacts-phone a {
+    line-height: 1;
+  }
+  .contacts-social__list {
+    margin-bottom: 30px;
+  }
+  .contacts__input {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .contacts__button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .contacts__title {
+    font-size: 36px;
+  }
+  .contacts__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts-social__item {
+    margin-right: 15px;
+  }
+  .contacts__input {
+    width: 45%;
+  }
+  .contacts_email {
+    width: 95%;
+  }
+}
+
+@media (max-width: 750px) {
+  .contacts__image {
+    display: none;
+  }
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
@@ -1933,25 +2116,28 @@ input.error {
   cursor: pointer;
 }
 
+.footer_title {
+  margin-left: 150px;
+}
+
 .footer-social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style: none;
   margin-top: 0;
-  padding: 0;
 }
 
 .footer-social__item {
-  font-size: 46px;
   margin-right: 25px;
 }
 
-.footer-social__item a {
-  color: #ffffff;
+@media (max-width: 1300px) {
+  .footer_title {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .footer-social {
+    margin-right: 20px;
+  }
 }
 
 .project__hero {

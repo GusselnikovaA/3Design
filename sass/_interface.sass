@@ -23,6 +23,7 @@ a
 
 .section 
   padding-top: 55px
+  padding-bottom: 55px
 
 .title 
   font-size: 46px
@@ -30,7 +31,24 @@ a
   text-transform: uppercase
   text-align: center
   font-family: 'SONGER Grotesque Bold'
-  letter-spacing: 4px
+  letter-spacing: 4pxs
+
+.page-title 
+  letter-spacing: 4.5px
+  color: $light-color
+  +thin
+  text-transform: uppercase
+
+.social 
+  &__list 
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+  &__item 
+    font-size: 46px
+    a 
+      color: $light-color
 
 .input
   border: none
@@ -63,6 +81,19 @@ input.error
     display: block
     width: 40px
     z-index: 999
+
+@media (max-width: 1150px)
+  .section 
+    padding-top: 30px
+    padding-bottom: 30px
+
+  .title 
+    font-size: 40px
+
+  .social 
+    &__item 
+      font-size: 40px
+
 
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
@@ -149,5 +180,6 @@ input.error
         &:after 
           transform: scaleY(1)
 
-    
+
+
 

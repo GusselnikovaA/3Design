@@ -2,7 +2,7 @@
   // background-color: #1f1b18
   background-color: $dark-color
   color: $light-color
-  padding-bottom: 55px
+  // padding-bottom: 55px
   &-wrap 
     display: flex
   &__image 
@@ -23,17 +23,10 @@
       line-height: 1.55
   &-social
     &__list 
-      display: flex
-      justify-content: center
-      list-style: none
       margin-top: 0
-      padding: 0
       margin-bottom: 50px
     &__item 
-      font-size: 46px
       margin-right: 25px
-      a 
-        color: $light-color
       &:last-child 
         margin-right: 0
   &__input 
@@ -67,5 +60,43 @@
       border-left: 1px solid $light-color
       border-right: 1px solid $light-color
       transform: scaleY(0)
+
+@media (max-width: 1150px)
+  .contacts 
+    &-info 
+      padding-left: 50px
+    &__title 
+      margin-bottom: 30px
+    &-phone 
+      a 
+        line-height: 1
+    &-social
+      &__list 
+        margin-bottom: 30px
+    &__input 
+      margin-bottom: 10px
+      margin-right: 10px
+    &__button 
+      margin-top: 10px
+
+@media (max-width: 950px)
+  .contacts 
+    &__title 
+      font-size: 36px
+    &__image
+      display: flex
+    &-social 
+      &__item 
+        margin-right: 15px
+    &__input 
+      width: 45%
+    &_email
+      width: 95%
+
+@media (max-width: 750px)
+  .contacts 
+    &__image 
+      display: none
+
 
 

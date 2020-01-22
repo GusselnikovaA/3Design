@@ -23,11 +23,7 @@
     width: 100px
     z-index: 3
   &_title 
-    letter-spacing: 4.5px
-    color: $light-color
     margin-left: 150px
-    +thin
-    text-transform: uppercase
   &-list 
     display: flex
     text-transform: uppercase
@@ -42,3 +38,22 @@
         padding-bottom: 7px
   &-burger 
     display: none
+
+
+@media (max-width: 1200px)
+  .header 
+    &-logo 
+      width: 80px
+    &_title 
+      margin-left: 90px
+    &-list 
+      &__item
+        margin-right: 15px 
+        letter-spacing: 1.2px
+
+@media (max-width: 1100px)
+  .header 
+    &-nav 
+      display: none
+    &-burger 
+      display: block
