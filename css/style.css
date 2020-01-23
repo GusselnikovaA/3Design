@@ -2389,9 +2389,6 @@ input.error {
 }
 
 @media (max-width: 950px) {
-  .contacts__title {
-    font-size: 36px;
-  }
   .contacts__image {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
