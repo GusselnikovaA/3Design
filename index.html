@@ -34,7 +34,7 @@
             <li class="header-list__item"><a href="#contacts">Контакты</a></li>
           </ul>
           <!-- /.list header-list -->
-          <button class="header-burger header-burger_alert"><span></span></button>
+          <button class="header-burger burger_alert"><i class="fas fa-bars"></i></button>
         </nav>
         <!-- /.header-nav -->
       </div>
@@ -43,6 +43,26 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
+
+	<!-- МОДАЛЬНОЕ ОКНО БУРГЕР-МЕНЮ-->
+	<div class="menu-mobile" id="menu_mobile">
+			<div class="menu-block">
+				<button class="menu__close" id="burger_close">
+					<i class="fa fa-times"></i>
+				</button>
+				<nav class="menu-nav">
+					<ul class="menu-list">
+						<li class="menu-list__item"><a href="#edge">О нас</a></li>
+						<li class="menu-list__item"><a href="#steps">Этапы работ</a></li>
+						<li class="menu-list__item"><a href="#portfolio">Проекты</a></li>
+						<li class="menu-list__item"><a href="#contacts">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- /.menu-nav -->
+			</div>
+			<!-- /.menu-block -->
+	</div>
+	<!-- /.modal-menu -->
 
 
   <!-- ПЕРВИЙ ВИДИМЫ БЛОК НА СТРАНИЦЕ-СЛАЙДЕР hero -->
@@ -610,6 +630,7 @@
   <script src="js/jquery.twentytwenty.js"></script>
   <script src="js/arrow.js"></script>
   <script src="js/up.js"></script>
+  <script src="js/burger.js"></script>
   <!-- endbuild -->
 
   <script>
