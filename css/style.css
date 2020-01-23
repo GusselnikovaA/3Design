@@ -615,12 +615,6 @@ input.error {
     transition: 0.5s;
     color: #e00022;
   }
-  .contacts__button:hover {
-    color: rgba(0, 0, 0, 0.75);
-    background: #ffffff;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
 }
 
 /* Slider */
