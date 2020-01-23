@@ -39,10 +39,39 @@
   &-burger 
     display: none
     outline: none
-    font-size: 30px
-    color: $light-color
+    // font-size: 30px
+    // color: $light-color
     background-color: transparent 
     border: none
+    &__line 
+      width: 30px 
+      height: 3px 
+      background-color: #fff
+      position: relative
+      &:before, &:after
+        position: absolute 
+        left: 0
+        content: ''
+        display: block
+        width: 30px 
+        height: 3px 
+        background-color: #fff
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &:before 
+        top: -10px
+      &:after
+        top: 10px
+      &_active
+        background-color: transparent
+        &:before 
+          transform: rotate(45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+        &:after
+          transform: rotate(-45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+      
 
 
 @media (max-width: 1200px)
@@ -58,8 +87,6 @@
 
 @media (max-width: 1100px)
   .header 
-    padding: 10px 0
-    margin-top: 18px
     &-list
       display: none
     &-burger 
@@ -79,6 +106,7 @@
 
 @media (max-width: 444px)
   .header 
+    padding: 10px 0
     &:before
       height: 74px
     &__title 
