@@ -532,7 +532,7 @@ input.error {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 20px) {
   .header-list__item a {
     position: relative;
   }
