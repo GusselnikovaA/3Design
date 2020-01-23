@@ -112,7 +112,7 @@ input.error
   
 
 // HOVER ЭФФЕКТЫ 
-@media (min-width: 20px)
+@media (min-width: 992px)
   // HOVER эффекты блока HEADER 
   .header
     &-list 
@@ -138,14 +138,6 @@ input.error
       opacity: 1
       cursor: pointer
 
-  .portfolio
-    &-card 
-      &_hover
-        &:hover 
-          cursor: pointer
-          &:before
-            opacity: 1
-
   .follow
     &-slider 
       &__image 
@@ -153,6 +145,28 @@ input.error
           animation: bloom ease-in-out .75s forwards
           &:before 
             animation: circle .75s
+
+  .contacts
+    &__button 
+      &:hover
+        color: $dark-color
+        background: $light-color
+        transition: 0.7s
+        transition-delay: 0.4s 
+        &:before 
+          transform: scaleX(1)
+        &:after 
+          transform: scaleY(1)
+
+
+@media (min-width: 320px)
+  .portfolio
+    &-card 
+      &_hover
+        &:hover 
+          cursor: pointer
+          &:before
+            opacity: 1
 
   .telegram 
     a
@@ -189,13 +203,6 @@ input.error
       &:hover
         color: $dark-color
         background: $light-color
-        transition: 0.7s
-        transition-delay: 0.4s 
-        &:before 
-          transform: scaleX(1)
-        &:after 
-          transform: scaleY(1)
-
-
+        transition: 0.2s
 
 

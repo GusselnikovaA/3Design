@@ -532,7 +532,7 @@ input.error {
   }
 }
 
-@media (min-width: 20px) {
+@media (min-width: 992px) {
   .header-list__item a {
     position: relative;
   }
@@ -557,12 +557,6 @@ input.error {
     opacity: 1;
     cursor: pointer;
   }
-  .portfolio-card_hover:hover {
-    cursor: pointer;
-  }
-  .portfolio-card_hover:hover:before {
-    opacity: 1;
-  }
   .follow-slider__image:hover {
     -webkit-animation: bloom ease-in-out .75s forwards;
             animation: bloom ease-in-out .75s forwards;
@@ -570,6 +564,31 @@ input.error {
   .follow-slider__image:hover:before {
     -webkit-animation: circle .75s;
             animation: circle .75s;
+  }
+  .contacts__button:hover {
+    color: rgba(0, 0, 0, 0.75);
+    background: #ffffff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .contacts__button:hover:before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .contacts__button:hover:after {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@media (min-width: 320px) {
+  .portfolio-card_hover:hover {
+    cursor: pointer;
+  }
+  .portfolio-card_hover:hover:before {
+    opacity: 1;
   }
   .telegram a:hover {
     -webkit-transition: 0.5s;
@@ -599,18 +618,8 @@ input.error {
   .contacts__button:hover {
     color: rgba(0, 0, 0, 0.75);
     background: #ffffff;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
-  }
-  .contacts__button:hover:before {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .contacts__button:hover:after {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 }
 
