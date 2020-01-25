@@ -5,6 +5,9 @@
     background-attachment: fixed
     background-repeat: no-repeat
     position: relative
+    min-height: 700px
+    overflow: hidden
+    height: 100vh
     &__content 
       padding: 80px
       position: absolute
@@ -12,6 +15,9 @@
       left: 0
       background-color: $medium-color
       color: $light-color
+  &__title
+    max-width: 680px
+    text-align: left
   &_1
     background-image: url("../img/1/hero/1.jpg")
   &_2 
@@ -26,8 +32,65 @@
     +thin
   &-portfolio
     &_1
+      display: none
       height: 9370px
     &_2 
       height: 3600px
     &_3 
       height: 3100px
+
+
+@media (max-width: 1350px)
+  .project
+    &-portfolio 
+      &_1
+        height: 8190px
+
+@media (max-width: 1150px)
+  .project
+    &-portfolio 
+      &_1
+        height: 3110px
+
+@media (max-width: 950px)
+  .project
+    &__hero 
+      &__content 
+        padding: 50px
+    &-portfolio 
+      &_1
+        height: 3110px
+
+
+@media (max-width: 750px)
+  .project
+    &__hero 
+      &__content 
+         top: 35%
+    &-portfolio 
+      &_1
+        height: 3110px
+
+@media (max-width: 550px)
+  .project
+    &__hero 
+      &__content 
+         top: 10%
+         padding: 40px
+    &__subtitle 
+      max-width: 220px
+    &-portfolio 
+      &_1
+        height: 3110px
+
+@media (max-width: 414px)
+  .project
+    &-portfolio 
+      &_1
+        height: 3110px
+
+@media (max-width: 340px)
+  .project
+    &-portfolio 
+      &_1
+        height: 3110px
