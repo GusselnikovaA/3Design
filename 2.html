@@ -23,19 +23,19 @@
           <a href="index.html"><img src="img/header/circle-logo.png" alt="Логотип студии 3D дизайна Pine-studio"></a>
         </div>
         <!-- /.header-logo -->
-        <div class="header_title">
+        <div class="page-title header__title">
           студия 3D визуализации интерьеров
         </div>
         <!-- /.header_title -->
         <nav class="header-nav">
           <ul class="list header-list">
-            <li class="header-list__item"><a href="index.html#edge">О нас</a></li>
-            <li class="header-list__item"><a href="index.html#steps">Этапы работ</a></li>
-            <li class="header-list__item"><a href="index.html#portfolio">Проекты</a></li>
-            <li class="header-list__item"><a href="index.html#contacts">Контакты</a></li>
+            <li class="header-list__item"><a href="index.html#edge" target="_blank">О нас</a></li>
+            <li class="header-list__item"><a href="index.html#steps" target="_blank">Этапы работ</a></li>
+            <li class="header-list__item"><a href="index.html#portfolio" target="_blank">Проекты</a></li>
+            <li class="header-list__item"><a href="index.html#contacts" target="_blank">Контакты</a></li>
           </ul>
           <!-- /.list header-list -->
-          <button class="header-burger header-burger_alert"><span></span></button>
+          <button class="header-burger burger_alert "><span class="header-burger__line"></span></button>
         </nav>
         <!-- /.header-nav -->
       </div>
@@ -44,6 +44,23 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
+
+  <!-- МОДАЛЬНОЕ ОКНО БУРГЕР-МЕНЮ-->
+  <div class="menu-mobile" id="menu_mobile">
+    <div class="menu-block">
+      <nav class="menu-nav">
+        <ul class="menu-list">
+          <li class="menu-list__item"><a href="index.html#edge">О нас</a></li>
+          <li class="menu-list__item"><a href="index.html#steps">Этапы работ</a></li>
+          <li class="menu-list__item"><a href="index.html#portfolio">Проекты</a></li>
+          <li class="menu-list__item"><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- /.menu-nav -->
+    </div>
+    <!-- /.menu-block -->
+  </div>
+  <!-- /.modal-menu -->
 
 
   <!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
@@ -127,37 +144,37 @@
     <div class="container">
       <div class="portfolio-cards project-portfolio_2" itemscope itemtype="http://schema.org/ImageGallery">
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="img/2/render/1.jpg" itemprop="contentUrl" data-size="2000x1500">
+          <a href="img/2/render/1.jpg" itemprop="contentUrl" data-size="1800x1350">
             <img src="img/2/render/1.jpg" itemprop="thumbnail" alt="Image description" />
           </a>
         </figure>
 
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="img/2/render/2.jpg" itemprop="contentUrl" data-size="2000x1500">
+          <a href="img/2/render/2.jpg" itemprop="contentUrl" data-size="1800x1350">
             <img src="img/2/render/2.jpg" itemprop="thumbnail" alt="Image description" />
           </a>
         </figure>
 
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="img/2/render/3.jpg" itemprop="contentUrl" data-size="1900x2000">
+          <a href="img/2/render/3.jpg" itemprop="contentUrl" data-size="1710x1800">
             <img src="img/2/render/3.jpg" itemprop="thumbnail" alt="Image description" />
           </a>
         </figure>
 
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="img/2/render/4.jpg" itemprop="contentUrl" data-size="1900x2000">
+          <a href="img/2/render/4.jpg" itemprop="contentUrl" data-size="1710x1800">
             <img src="img/2/render/4.jpg" itemprop="thumbnail" alt="Image description" />
           </a>
         </figure>
 
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="img/2/render/5.jpg" itemprop="contentUrl" data-size="2000x1500">
+          <a href="img/2/render/5.jpg" itemprop="contentUrl" data-size="1800x1350">
             <img src="img/2/render/5.jpg" itemprop="thumbnail" alt="Image description" />
           </a>
         </figure>
 
         <figure class="portfolio-card" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="img/2/render/6.jpg" itemprop="contentUrl" data-size="2000x1500">
+          <a href="img/2/render/6.jpg" itemprop="contentUrl" data-size="1800x1350">
             <img src="img/2/render/6.jpg" itemprop="thumbnail" alt="Image description" />
           </a>
         </figure>
@@ -219,33 +236,33 @@
           <a href="index.html"><img src="img/footer/White.png" alt="Логотип студии 3D дизайна Pine-studio"></a>
         </div>
         <!-- /.footer-logo -->
-        <div class="header_title">
+        <div class="page-title footer__title">
           студия 3D визуализации интерьеров
         </div>
         <!-- /.header_title -->
         <div class="footer-social">
-          <ul class="footer-social__list list">
-            <li class="footer-social__item whatsapp">
+          <ul class="list social__list footer-social__list">
+            <li class="social__item footer-social__item whatsapp">
               <a href="https://api.whatsapp.com/send?phone=79215623327" target="_blank">
                 <i class="fab fa-whatsapp"></i>
               </a>
             </li>
-            <li class="footer-social__item instagram">
+            <li class="social__item footer-social__item instagram">
               <a href="https://www.instagram.com/mariyevskaya/" target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
-            <li class="footer-social__item telegram">
+            <li class="social__item footer-social__item telegram">
               <a href="#" target="_blank">
                 <i class="fab fa-telegram-plane"></i>
               </a>
             </li>
-            <li class="footer-social__item pinterest">
+            <li class="social__item footer-social__item pinterest">
               <a href="https://www.pinterest.ru/pinestudio3d" target="_blank">
                 <i class="fab fa-pinterest-p"></i>
               </a>
             </li>
-            <li class="footer-social__item behance">
+            <li class="social__item footer-social__item behance">
               <a href="https://www.behance.net/pinestudio3d" target="_blank">
                 <i class="fab fa-behance"></i>
               </a>
@@ -268,6 +285,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/up.js"></script>
   <script src="js/arrow.js"></script>
+  <script src="js/burger.js"></script>
 
   <!-- <script>
     var pswpElement = document.querySelectorAll('.pswp')[0];
