@@ -2633,13 +2633,13 @@ input.error {
 
 @media (max-width: 1350px) {
   .project-portfolio_1 {
-    height: 8190px;
+    height: 8030px;
   }
 }
 
 @media (max-width: 1150px) {
   .project-portfolio_1 {
-    height: 3110px;
+    height: 6370px;
   }
 }
 
@@ -2648,7 +2648,7 @@ input.error {
     padding: 50px;
   }
   .project-portfolio_1 {
-    height: 3110px;
+    height: 5020px;
   }
 }
 
@@ -2657,7 +2657,7 @@ input.error {
     top: 35%;
   }
   .project-portfolio_1 {
-    height: 3110px;
+    height: 3530px;
   }
 }
 
@@ -2670,19 +2670,19 @@ input.error {
     max-width: 220px;
   }
   .project-portfolio_1 {
-    height: 3110px;
+    height: 9620px;
   }
 }
 
 @media (max-width: 414px) {
   .project-portfolio_1 {
-    height: 3110px;
+    height: 8280px;
   }
 }
 
 @media (max-width: 340px) {
   .project-portfolio_1 {
-    height: 3110px;
+    height: 7480px;
   }
 }
 /*# sourceMappingURL=style.css.map */
