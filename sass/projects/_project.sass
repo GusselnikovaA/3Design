@@ -15,16 +15,15 @@
       left: 0
       background-color: $medium-color
       color: $light-color
-  &__title
-    max-width: 680px
-    text-align: left
   &_1
     background-image: url("../img/1/hero/1.jpg")
   &_2 
     background-image: url("../img/2/hero/6.jpg")
   &_3 
     background-image: url("../img/3/hero/20.jpg")
-  &__title 
+  &__title
+    text-align: left
+    line-height: 1.2
     display: block
     margin-bottom: 20px
   &__subtitle
@@ -32,10 +31,9 @@
     +thin
   &-portfolio
     &_1
-      display: none
       height: 9370px
     &_2 
-      height: 3600px
+      height: 3590px
     &_3 
       height: 3100px
 
@@ -44,13 +42,21 @@
   .project
     &-portfolio 
       &_1
-        height: 8190px
+        height: 8030px
+      &_2 
+        height: 3590px
 
 @media (max-width: 1150px)
   .project
+    &__hero 
+      background-attachment: unset
+    &__title
+      max-width: 680px
     &-portfolio 
       &_1
-        height: 3110px
+        height: 6370px
+      &_2 
+        height: 3590px
 
 @media (max-width: 950px)
   .project
@@ -59,7 +65,9 @@
         padding: 50px
     &-portfolio 
       &_1
-        height: 3110px
+        height: 5020px
+      &_2 
+        height: 3590px
 
 
 @media (max-width: 750px)
@@ -69,7 +77,9 @@
          top: 35%
     &-portfolio 
       &_1
-        height: 3110px
+        height: 3530px
+      &_2 
+        height: 3590px
 
 @media (max-width: 550px)
   .project
@@ -81,16 +91,22 @@
       max-width: 220px
     &-portfolio 
       &_1
-        height: 3110px
+        height: 9620px
+      &_2 
+        height: 3590px
 
 @media (max-width: 414px)
   .project
     &-portfolio 
       &_1
-        height: 3110px
+        height: 8280px
+      &_2 
+        height: 3590px
 
 @media (max-width: 340px)
   .project
     &-portfolio 
       &_1
-        height: 3110px
+        height: 7480px
+      &_2 
+        height: 3590px
