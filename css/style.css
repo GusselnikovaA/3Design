@@ -2173,7 +2173,7 @@ input.error {
   display: flex;
 }
 
-.compare-text {
+.compare__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2181,6 +2181,25 @@ input.error {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
+  font-size: 24px;
+  letter-spacing: 4.5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.compare__text p {
+  max-width: 80%;
+}
+
+.compare__text span {
+  display: block;
+  font-family: 'SONGER Grotesque';
+  font-size: 36px;
+  padding: 20px 0;
 }
 
 .compare-image {
@@ -2204,7 +2223,7 @@ input.error {
         -ms-flex-order: -1;
             order: -1;
   }
-  .compare-text, .compare-image {
+  .compare__text, .compare-image {
     width: 100%;
   }
 }

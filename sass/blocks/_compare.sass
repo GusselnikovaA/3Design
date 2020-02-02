@@ -2,10 +2,24 @@
   padding: 0
   &-block 
     display: flex
-  &-text 
+  &__text 
     display: flex
     align-items: center
     width: 50%
+    font-size: 24px
+    // font-family: 'SONGER Grotesque'
+    letter-spacing: 4.5px
+    justify-content: center
+    text-align: center
+    line-height: 1.4
+    text-transform: uppercase
+    p 
+      max-width: 80%
+    span
+      display: block
+      font-family: 'SONGER Grotesque'
+      font-size: 36px
+      padding: 20px 0
   &-image 
     width: 50%
   &_dark
@@ -19,6 +33,6 @@
       &:first-child 
         .compare-text
           order: -1
-    &-text, &-image 
+    &__text, &-image 
       width: 100%
     
