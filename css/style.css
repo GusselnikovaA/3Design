@@ -2185,13 +2185,13 @@ input.error {
           align-items: center;
   width: 50%;
   font-size: 24px;
-  letter-spacing: 4.5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   line-height: 1.4;
   text-transform: uppercase;
+  font-family: 'Proxima Nova Thin', sans-serif;
 }
 
 .compare__text p {
@@ -2201,6 +2201,7 @@ input.error {
 .compare__text span {
   display: block;
   font-family: 'SONGER Grotesque';
+  letter-spacing: 4.5px;
   font-size: 36px;
   padding: 20px 0;
 }
