@@ -2655,6 +2655,10 @@ input.error {
   background-image: url("../img/10/hero/1.jpg");
 }
 
+.project_11 {
+  background-image: url("../img/11/hero/2.jpg");
+}
+
 .project__title {
   text-align: left;
   line-height: 1.2;
@@ -2676,7 +2680,7 @@ input.error {
 }
 
 .project-portfolio_3 {
-  height: 9900px;
+  height: 8800px;
 }
 
 .project-portfolio_4 {
@@ -2705,6 +2709,10 @@ input.error {
 
 .project-portfolio_10 {
   height: 3900px;
+}
+
+.project-portfolio_11 {
+  height: 5180px;
 }
 
 @media (max-width: 1350px) {
