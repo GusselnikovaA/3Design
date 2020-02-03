@@ -1982,6 +1982,8 @@ input.error {
 
 .info__text {
   text-align: center;
+  font-family: 'Proxima Nova Thin', sans-serif;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 1150px) {
@@ -2050,6 +2052,7 @@ input.error {
 
 .portfolio {
   padding: 0;
+  padding-top: 20px;
 }
 
 .portfolio-cards {
@@ -2108,8 +2111,11 @@ input.error {
 }
 
 @media (max-width: 1150px) {
+  .portfolio {
+    padding-top: 10px;
+  }
   .portfolio-cards {
-    height: 2490px;
+    height: 2450px;
   }
   .portfolio-card {
     max-width: 450px;
@@ -2119,7 +2125,7 @@ input.error {
 
 @media (max-width: 950px) {
   .portfolio-cards {
-    height: 1950px;
+    height: 1940px;
   }
   .portfolio-card {
     max-width: 350px;
@@ -2127,8 +2133,11 @@ input.error {
 }
 
 @media (max-width: 750px) {
+  .portfolio {
+    padding-top: 5px;
+  }
   .portfolio-cards {
-    height: 1370px;
+    height: 1355px;
   }
   .portfolio-card {
     max-width: 250px;
@@ -2138,7 +2147,6 @@ input.error {
 
 @media (max-width: 550px) {
   .portfolio-cards {
-    padding-top: 10px;
     height: 3700px;
   }
   .portfolio-card {
@@ -2198,14 +2206,6 @@ input.error {
   max-width: 80%;
 }
 
-.compare__text span {
-  display: block;
-  font-family: 'SONGER Grotesque';
-  letter-spacing: 4.5px;
-  font-size: 36px;
-  padding: 20px 0;
-}
-
 .compare-image {
   width: 50%;
 }
@@ -2215,6 +2215,18 @@ input.error {
   color: #ffffff;
 }
 
+@media (max-width: 1150px) {
+  .compare__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .compare__text {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 750px) {
   .compare-block {
     -webkit-box-orient: vertical;
@@ -2222,13 +2234,21 @@ input.error {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .compare-block:first-child .compare-text {
+  .compare-block:first-child .compare__text {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
+  .compare-block:nth-child(2) .compare__text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+  }
   .compare__text, .compare-image {
     width: 100%;
+    font-size: 16px;
+  }
+  .compare__text p, .compare-image p {
+    max-width: 95%;
   }
 }
 
