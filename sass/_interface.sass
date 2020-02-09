@@ -56,14 +56,16 @@ a
   padding: 12px
   outline: none
   background-color: transparent
+  letter-spacing: 1.2px
   color: $light-color
   &:focus
     border-bottom: 1px solid $light-color
 
 input.error 
-  border-bottom: 1px solid $error-color
-  // &:focus
-  //   border: 1px solid $error-color
+  &::placeholder 
+    color: $error-color
+  &:focus
+    border-bottom: 1px solid $error-color
 
 .button 
   outline: none
