@@ -33,7 +33,7 @@ $mail->addAddress('pinestudio3d@gmail.com');     // Кому будет уход
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта pine-studio.ru';
-$mail->Body    = '' .$name . ' оставил заявку. Его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->Body    = '' .$name . ' заполнил форму обратной связи. Его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

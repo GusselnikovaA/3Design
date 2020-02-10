@@ -1,5 +1,5 @@
-// Валидация формы
 $(document).ready(function () {
+  // Валидация формы
   $('#contacts-form').validate({
     rules: {
       username: {
@@ -27,6 +27,17 @@ $(document).ready(function () {
         required: "Введите корректный email",
         email: "Введите корректный email"
       }
+    },
+    // Отправка формы
+    submitHandler: function (e) {
+      $.ajax({
+        url: 'mail.php',
+        type: 'POST',
+        data: $('#contacts-form').serialize(),
+        success: function (data) {
+          $("input").val("");
+        }
+      });
     }
   }),
 
