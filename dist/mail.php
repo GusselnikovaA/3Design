@@ -40,6 +40,6 @@ if(!$mail->send()) {
     echo 'Error';
 } 
 // else {
-//     header('location: thank-you.html');
+//     header('location: thanks.html');
 // }
 ?>
