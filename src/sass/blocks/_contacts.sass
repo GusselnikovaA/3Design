@@ -29,11 +29,12 @@
       &:last-child 
         margin-right: 0
   &__input 
-    width: 40%
+    width: 45%
     margin-bottom: 30px
-    margin-right: 20px
+    &:first-child 
+      margin-right: 20px
   &_email
-      width: 84%
+      width: 94%
   &__button 
     display: block
     margin: auto
@@ -83,21 +84,33 @@
   .contacts 
     &__image
       align-self: center
+    &__title
+      font-size: 36px
     &-social 
       &__item 
         margin-right: 15px
-    &__input 
-      width: 45%
-    &_email
+    &__input, &_email 
       width: 95%
+
+@media (max-width: 886px)
+  .contacts
+    &__title 
+      font-size: 28px
 
 @media (max-width: 750px)
   .contacts 
+    &__title 
+      font-size: 36px
     &__image 
       display: none
     &-info 
       width: 100%
       padding-left: 0
+
+@media (max-width: 550px)
+  .contacts 
+    &__title
+      font-size: 28px
 
 
 
