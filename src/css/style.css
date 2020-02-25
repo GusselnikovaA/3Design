@@ -2377,13 +2377,16 @@ input.error:focus {
 }
 
 .contacts__input {
-  width: 40%;
+  width: 45%;
   margin-bottom: 30px;
+}
+
+.contacts__input:first-child {
   margin-right: 20px;
 }
 
 .contacts_email {
-  width: 84%;
+  width: 94%;
 }
 
 .contacts__button {
@@ -2450,24 +2453,39 @@ input.error:focus {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .contacts__title {
+    font-size: 36px;
+  }
   .contacts-social__item {
     margin-right: 15px;
   }
-  .contacts__input {
-    width: 45%;
-  }
-  .contacts_email {
+  .contacts__input, .contacts_email {
     width: 95%;
   }
 }
 
+@media (max-width: 886px) {
+  .contacts__title {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 750px) {
+  .contacts__title {
+    font-size: 36px;
+  }
   .contacts__image {
     display: none;
   }
   .contacts-info {
     width: 100%;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .contacts__title {
+    font-size: 28px;
   }
 }
 
