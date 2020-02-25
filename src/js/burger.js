@@ -12,6 +12,7 @@ $(document).ready(function(){
 
   $('.menu-list__item').on('click', function(){
     modalMenu.removeClass('menu-mobile_active');
+    burger.removeClass('header-burger__line_active');
   });
   // closeMenu.on('click', function(){
   //   modalMenu.removeClass('menu-mobile_active');
