@@ -1403,7 +1403,7 @@ input.error:focus {
 
 .header-logo {
   position: absolute;
-  top: auto;
+  top: -42px;
   left: 0;
   width: 100px;
   z-index: 3;
@@ -1498,6 +1498,7 @@ input.error:focus {
 @media (max-width: 1200px) {
   .header-logo {
     width: 80px;
+    top: -32px;
   }
   .header__title {
     margin-left: 90px;
@@ -1533,18 +1534,23 @@ input.error:focus {
   }
   .header-logo {
     width: 60px;
+    top: -12px;
   }
 }
 
-@media (max-width: 471px) {
+@media (max-width: 492px) {
   .header {
     padding: 10px 0;
   }
   .header:before {
     height: 74px;
   }
+  .header-logo {
+    top: -3px;
+  }
   .header__title {
     margin-left: 70px;
+    max-width: 305px;
   }
 }
 
@@ -1998,6 +2004,7 @@ input.error:focus {
 }
 
 .info__text {
+  max-width: 100%;
   text-align: center;
   font-family: 'Proxima Nova Thin', sans-serif;
   letter-spacing: 1px;
@@ -2095,6 +2102,7 @@ input.error:focus {
 
 .portfolio-card {
   max-width: 650px;
+  min-height: 1px;
   margin: 20px;
   position: relative;
 }

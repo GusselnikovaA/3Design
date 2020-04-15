@@ -18,7 +18,7 @@
     align-items: center
   &-logo 
     position: absolute
-    top: auto
+    top: -42px
     left: 0
     width: 100px
     z-index: 3
@@ -76,6 +76,7 @@
   .header 
     &-logo 
       width: 80px
+      top: -32px
     &__title 
       margin-left: 90px
     &-list 
@@ -101,11 +102,15 @@
       max-width: 400px
     &-logo 
       width: 60px
+      top: -12px
 
-@media (max-width: 471px)
+@media (max-width: 492px)
   .header 
     padding: 10px 0
     &:before
       height: 74px
+    &-logo 
+      top: -3px
     &__title 
       margin-left: 70px
+      max-width: 305px
